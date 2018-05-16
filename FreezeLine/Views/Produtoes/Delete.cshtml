@@ -1,0 +1,185 @@
+﻿@model FreezeLine.Models.Produto
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Produto</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Apelido)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Apelido)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Descricao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Descricao)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PesoLiquido)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PesoLiquido)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Ativo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ativo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Ipi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ipi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.QtdUnid)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.QtdUnid)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RefAuxiliarProduto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RefAuxiliarProduto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.QtUnPorUnArmz)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.QtUnPorUnArmz)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PesoLiquidoCalc)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PesoLiquidoCalc)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ItemStru)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ItemStru)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CustODirTotal)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CustODirTotal)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CstMatUltmEtapa)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CstMatUltmEtapa)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CstMatEtapa1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CstMatEtapa1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CstMatEtapa2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CstMatEtapa2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CstMatEtapa3)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CstMatEtapa3)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CstTotMaterial)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CstTotMaterial)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CustoDirMod)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CustoDirMod)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HorasModUltmEtapa)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HorasModUltmEtapa)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HorasModEtapa1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HorasModEtapa1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HorasModEtapa2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HorasModEtapa2)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>
